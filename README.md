@@ -20,7 +20,7 @@ A dog image gallery application featuring a collection of adorable dog images.
 2. **Install Dependencies**: Navigate to the project directory and install the required packages using npm.
 
    ```shell
-   cd good-boy-app
+   cd GoodBoyApp
    npm install
 3. **Run the Development Server**: Start the development server using the following command:
 
