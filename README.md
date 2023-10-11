@@ -15,7 +15,7 @@ A dog image gallery application featuring a collection of adorable dog images.
 1. **Clone the Repository**: Download or clone this repository to your local machine.
 
    ```shell
-   git clone https://github.com/your/repository.git
+   [git clone https://github.com/your/repository.git](https://github.com/AtiposEiji/GoodBoyApp.git)
 
 2. **Install Dependencies**: Navigate to the project directory and install the required packages using npm.
 
