@@ -27,11 +27,10 @@ function Listing({ selectedValue, data }: IListing) {
                   <img src={imageUrl} alt={`${selectedValue} ${index}`} />
                 </div>
               ))}
-
-              {visibleImages < data.message.length && (
-                <LoadMoreButton onClick={loadMoreImages} />
-              )}
             </Masonry>
+            {visibleImages < data.message.length && (
+              <LoadMoreButton onClick={loadMoreImages} />
+            )}
           </div>
         )}
       </div>
