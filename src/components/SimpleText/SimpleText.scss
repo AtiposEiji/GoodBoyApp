@@ -1,0 +1,20 @@
+@import "../../assets/scss/responsive.scss";
+@import "../../assets/scss/font.scss";
+
+.simple-text{
+    @include responsiveWidth(1280);
+    padding: 60px 20px;
+    margin: 0 auto;
+    text-align: center;
+
+    .title {
+        font-family: $primary-font;
+        @include responsiveFontSize(42,36);
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-family: $primary-font;
+        @include responsiveFontSize(18, 16);
+    }
+}

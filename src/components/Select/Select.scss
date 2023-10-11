@@ -1,0 +1,12 @@
+@import "../../assets/scss/responsive.scss";
+@import "../../assets/scss/font.scss";
+
+.select{
+    display: block;
+    font-family: $primary-font;
+    @include responsiveFontSize(16, 14);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto 30px;
+}
