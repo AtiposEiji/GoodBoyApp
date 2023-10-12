@@ -2,6 +2,7 @@
 
 ## Description
 A dog image gallery application featuring a collection of adorable dog images.
+[Link to the page](https://atiposeiji.github.io/GoodBoyApp/)
 
 ## Components Created
 - **Dashboard**: The main dashboard for the Good Boy App.
