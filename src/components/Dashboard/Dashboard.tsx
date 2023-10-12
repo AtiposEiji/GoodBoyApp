@@ -3,6 +3,7 @@ import Listing from "../Listing/Listing";
 import Select from "../Select/Select";
 import SimpleText from "../SimpleText/SimpleText";
 import { IDog } from "../../models/IDog";
+import "./Dashboard.scss";
 
 function Dashboard() {
   const [selectedBreed, setSelectedBreed] = useState<string | null>(null);
@@ -17,11 +18,11 @@ function Dashboard() {
           elementTypeDescription="div"
           description="This application is powered by Davide Brignoli"
         />
-        <Select onValueSelected={setSelectedBreed} setData={setDogData} />
-        {dogData !== null && selectedBreed !== null && (
-          <Listing selectedValue={selectedBreed} data={dogData} />
-        )}
       </div>
+      <Select onValueSelected={setSelectedBreed} setData={setDogData} />
+      {dogData !== null && selectedBreed !== null && (
+        <Listing selectedValue={selectedBreed} data={dogData} />
+      )}
     </>
   );
 }

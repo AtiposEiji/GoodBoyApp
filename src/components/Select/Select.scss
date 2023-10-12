@@ -1,13 +1,21 @@
 @import "../../assets/scss/responsive.scss";
 @import "../../assets/scss/font.scss";
 
-.select{
-    display: block;
-    font-family: $primary-font;
-    @include responsiveFontSize(16, 14);
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 0 auto 30px;
-    text-transform: capitalize;
+.select {
+  display: block;
+  font-family: $primary-font;
+  @include responsiveFontSize(16, 14);
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto 30px;
+  text-transform: capitalize;
+
+  /* Styling the arrow */
+  appearance: none; /* Hide the default arrow in some browsers */
+  -webkit-appearance: none; /* Hide the default arrow in webkit browsers (Safari) */
+  -moz-appearance: none; /* Hide the default arrow in Firefox */
+  background: url('../../assets/images/paw.svg') no-repeat;
+  background-position: 95% center; /* Adjust the position of the arrow image */
+  background-size: 20px; /* Adjust the size of the arrow image */
 }

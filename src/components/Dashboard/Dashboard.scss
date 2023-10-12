@@ -1,0 +1,13 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/images/desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+
+    @media (max-width: 767px) {
+        background: url("../../assets/images/mobile.jpg");
+    }
+}
