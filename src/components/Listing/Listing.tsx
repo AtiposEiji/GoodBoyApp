@@ -4,7 +4,7 @@ import Masonry from "react-layout-masonry";
 import "./Listing.scss";
 import { useState } from "react";
 
-function Listing({ selectedValue, data }: IListing) {
+const Listing = ({ selectedValue, data }: IListing) => {
   const [visibleImages, setVisibleImages] = useState(9);
 
   if (!selectedValue || !data || !Array.isArray(data.message)) {

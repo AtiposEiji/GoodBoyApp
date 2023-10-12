@@ -5,7 +5,7 @@ import SimpleText from "../SimpleText/SimpleText";
 import { IDog } from "../../models/IDog";
 import "./Dashboard.scss";
 
-function Dashboard() {
+const Dashboard = () => {
   const [selectedBreed, setSelectedBreed] = useState<string | null>(null);
   const [dogData, setDogData] = useState<IDog | null>(null);
 

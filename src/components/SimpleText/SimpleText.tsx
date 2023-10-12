@@ -1,7 +1,7 @@
 import { ISimpleText } from "../../models/ISimpleText";
 import "./SimpleText.scss"
 
-function SimpleText({ elementTypeTitle, title, elementTypeDescription, description }: ISimpleText) {
+const SimpleText = ({ elementTypeTitle, title, elementTypeDescription, description }: ISimpleText) => {
     const Title = elementTypeTitle || "h1";
     const Description = elementTypeDescription || "div";
     

@@ -1,6 +1,6 @@
 import { LoadMoreProps } from "../../models/ILoadMoreProps";
 
-function LoadMoreButton({ onClick }: LoadMoreProps) {
+const LoadMoreButton = ({ onClick }: LoadMoreProps) => {
   return (
     <div className="load-more-button" onClick={onClick}>
       Load More

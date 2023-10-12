@@ -6,7 +6,7 @@ import "./Select.scss";
 import { GetDog } from "../../services/GetDogs";
 import { ISelectProps } from "../../models/ISelectProps";
 
-function Select({ onValueSelected, setData }: ISelectProps) {
+const Select = ({ onValueSelected, setData }: ISelectProps) => {
   const [listSet, setListSet] = useState<IDogBreedList>();
   useEffect(() => {
     const fetchData = async () => {
