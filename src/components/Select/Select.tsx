@@ -6,7 +6,7 @@ import "./Select.scss";
 import { GetDog } from "../../services/GetDogs";
 import { ISelectProps } from "../../models/ISelectProps";
 
-const Select = ({ onValueSelected, setData }: ISelectProps) => {
+const Select = ({ onValueSelected, setData, text }: ISelectProps) => {
   const [listSet, setListSet] = useState<IDogBreedList>();
   useEffect(() => {
     const fetchData = async () => {
@@ -37,10 +37,9 @@ const Select = ({ onValueSelected, setData }: ISelectProps) => {
   };
   return (
     <>
-      <select className="select" onChange={handleChange}>
-        <option className="option" value="" disabled>
-          Select a breed
-        </option>
+    <div className="select">
+      {text ? <p>{text}</p> : null}
+      <select onChange={handleChange}>
         {listSet &&
           Object.entries(listSet.message).map(([value, subValues]) => (
             <React.Fragment key={value}>
@@ -54,6 +53,7 @@ const Select = ({ onValueSelected, setData }: ISelectProps) => {
             </React.Fragment>
           ))}
       </select>
+    </div>
     </>
   );
 }

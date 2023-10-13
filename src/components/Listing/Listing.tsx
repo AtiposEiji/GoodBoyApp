@@ -20,7 +20,6 @@ const Listing = ({ selectedValue, data }: IListing) => {
       <div className="listing">
         {selectedValue && (
           <div>
-            <h2 className="title">{selectedValue} Images</h2>
             <Masonry columns={{ 767: 1, 1180: 2, 1280: 3 }} gap={16}>
               {data.message.slice(0, visibleImages).map((imageUrl, index) => (
                 <div key={index}>

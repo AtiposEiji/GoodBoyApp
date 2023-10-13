@@ -19,7 +19,7 @@ const Dashboard = () => {
           description="This application is powered by Davide Brignoli"
         />
       </div>
-      <Select onValueSelected={setSelectedBreed} setData={setDogData} />
+      <Select onValueSelected={setSelectedBreed} setData={setDogData} text={"Discover beautiful photos of:"} />
       {dogData !== null && selectedBreed !== null && (
         <Listing selectedValue={selectedBreed} data={dogData} />
       )}
