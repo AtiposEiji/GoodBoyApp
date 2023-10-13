@@ -16,7 +16,7 @@ const Dashboard = () => {
           elementTypeTitle="h1"
           title="THE GOOD BOY APP"
           elementTypeDescription="div"
-          description="This application is powered by Davide Brignoli"
+          description="Powered by Davide Brignoli"
         />
       </div>
       <Select onValueSelected={setSelectedBreed} setData={setDogData} text={"Discover beautiful photos of:"} />
