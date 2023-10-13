@@ -9,6 +9,7 @@
 
     .title {
         font-family: $primary-font;
+        font-weight: 700;
         @include responsiveFontSize(42,32);
         margin-bottom: 20px;
     }

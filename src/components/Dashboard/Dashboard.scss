@@ -7,7 +7,7 @@
   align-items: center;
   background: url("../../assets/images/desktop.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: clampFluidResponsive(680, 280, 768);
 
   @media (max-width: 767px) {
@@ -21,7 +21,7 @@
     background-size: contain;
 
     .simple-text {
-        max-width: clamp(200px, calc(12.5rem + ((1vw - 3.75px) * 255.102)), 1200px);
+        max-width: clamp(380px, calc(23.75rem + ((1vw - 3.75px) * 209.1837)), 1200px);
     }
   }
 }
