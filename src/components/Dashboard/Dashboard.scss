@@ -1,13 +1,27 @@
-.dashboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("../../assets/images/desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 700px;
+@import "../../assets/scss/responsive.scss";
+@import "../../assets/scss/font.scss";
 
-    @media (max-width: 767px) {
-        background: url("../../assets/images/mobile.jpg");
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/images/desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: clampFluidResponsive(680, 280, 768);
+
+  @media (max-width: 767px) {
+    background: url("../../assets/images/mobile.jpg");
+    min-height: clamp(
+      345px,
+      calc(21.5625rem + ((1vw - 3.75px) * 90.5612)),
+      700px
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .simple-text {
+        max-width: clamp(200px, calc(12.5rem + ((1vw - 3.75px) * 255.102)), 1200px);
     }
+  }
 }
